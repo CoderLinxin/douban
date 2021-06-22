@@ -1,0 +1,55 @@
+/* pages/login.wxss */
+image{
+    display: flex;
+}
+
+.container {
+    display: flex;
+    padding: 0 40rpx;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 170rpx;
+    height: 170rpx;
+    margin: 80rpx 0;
+}
+
+.loginBtn {
+    border-radius: 10rpx;
+    height: 80rpx;
+    width: 100%;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+
+.weChat {
+    background-color: #42BD55;
+    margin-bottom: 20rpx;
+    color: #ffffff;
+}
+
+.douBan {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid #42BD55;
+    color: #42BD55;
+}
+
+.agreement {
+    display: flex;
+    position: absolute;
+    bottom: 50rpx;
+    font-size: 26rpx;
+}
+
+.agreement .agree {
+    color: #B9B9B9;
+}
+
+.agreement .douBanAgreement {
+    margin-left: 20rpx;
+    color: #42BD55;
+}

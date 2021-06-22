@@ -1,0 +1,34 @@
+<view class="item" bind:tap="clickItem">
+	<!-- 影片海报 -->
+	<image class="poster" src="{{movie.image}}" />
+
+	<!-- 影片信息 -->
+	<view class="scoreWraper">
+		<!-- 影片标题 -->
+		<text class="title">{{movie.title}}</text>
+		<!-- 影片评分 -->
+		<view>
+			<block wx:if="{{movie.off != 5}}">
+				<image
+				 wx:for="{{movie.on}}"
+				 wx:key="unique"
+				 class="star"
+				 src="/assets/imgs/rating_star_small_on.png"
+				/>
+				<image wx:if="{{movie.half === 1}}" class="star" src="/assets/imgs/rating_star_small_half.png" />
+				<image
+				 wx:for="{{movie.off}}"
+				 wx:key="unique"
+				 class="star"
+				 src="/assets/imgs/rating_star_small_off.png"
+				/>
+				<text class="score">{{movie.score}}</text>
+			</block>
+
+			<block wx:else>
+				<text class="score">暂无评分</text>
+			</block>
+		</view>
+	</view>
+</view>
+

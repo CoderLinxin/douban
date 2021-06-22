@@ -1,0 +1,20 @@
+<!-- 电影列表页面 -->
+
+	<nav-bar
+	 title="{{title}}"
+	 bind:backTap="back"
+	 bind:homeTap="home" />
+
+<view class="container">
+	<movie-item
+	 wx:for="{{movies}}"
+	 wx:for-item="movie"
+	 wx:key="unique"
+	 movie="{{movie}}"
+	 class="item"
+	/>
+	<!-- 设置占位元素 -->
+	<movie-item class="item" wx:if="{{movies.length % 3 > 0}}" class="hide" />
+	<movie-item class="item" wx:if="{{movies.length % 3 === 1}}" class="hide" />
+</view>
+

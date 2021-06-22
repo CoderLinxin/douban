@@ -1,0 +1,47 @@
+<!-- 豆瓣首页 -->
+<view class="container">
+	<!-- 顶部导航栏 -->
+	<view class="nav-bar">
+		<nav-bar
+		 title="首页"
+		 navBarColor="#42BD55"
+		 statusBarColor="#42BD55"
+		 titleColor="#fff"
+		 back="{{false}}"
+		 home="{{false}}"
+		/>
+	</view>
+
+	<!-- 顶部搜索框 -->
+	<view class="searchBg">
+		<view class="searchWraper" bind:tap="search">
+			<image class="searchIcon" src="/assets/imgs/ic_search.png" />
+			<text class="searchText">搜索</text>
+		</view>
+	</view>
+
+	<!-- 主要界面 -->
+	<view class="main">
+		<view class="cinemaItem" wx:for="{{allMovies}}" wx:key="unique">
+			<!-- 顶部查看更多 -->
+			<view class="top">
+				<view class="hot">{{item.title}}</view>
+				<text class="more" bind:tap="viewMore"
+							data-index="{{index}}">查看更多 > </text>
+			</view>
+
+			<!-- 电影条目 -->
+			<scroll-view class="itemWraper" scroll-x="{{true}}">
+				<movie-item
+				 wx:for="{{item.movie}}"
+				 wx:for-item="movie"
+				 wx:key="unique"
+				 movie="{{movie}}"
+				 class="item"
+				/>
+			</scroll-view>
+
+		</view>
+	</view>
+</view>
+

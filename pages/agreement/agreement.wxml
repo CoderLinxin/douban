@@ -1,0 +1,3 @@
+<!-- 跳转的协议页面 -->
+<web-view src="https://read.douban.com/membership/subscription" bindmessage=""></web-view>
+

@@ -1,0 +1,27 @@
+<!-- 用户登录界面 -->
+<view class="container">
+	<!-- 顶部导航栏 -->
+	<nav-bar
+	 title="登录"
+	 back="{{true}}"
+	 home="{{true}}"
+	/>
+
+	<!-- logo -->
+	<image class="logo" src="/assets/imgs/ic_launcher.png" />
+
+	<!-- 登录按钮 -->
+	<view class="weChat loginBtn" bind:tap="weChatLogin">
+		微信登录
+	</view>
+	<view class="douBan loginBtn" bind:tap="douBanLogin">
+		已有豆瓣帐号登录
+	</view>
+
+	<!-- 底部协议 -->
+	<view class="agreement">
+		<view class="agree">登录表示同意</view>
+		<view class="douBanAgreement" bind:tap="skipAgreement">豆瓣使用协议/隐私协议</view>
+	</view>
+</view>
+

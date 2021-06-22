@@ -1,0 +1,29 @@
+<!-- 顶部导航条 -->
+
+<!-- 占位元素 -->
+<view class="occupy" style="height:{{occupyHeight}}px" />
+
+<view class="container">
+	<!-- 状态栏 -->
+	<view style="{{statusBarStyle}}" />
+
+	<!-- 导航栏 -->
+	<view class="navBar" style="{{navBarStyle}}">
+		<view class="icon">
+			<image
+			 wx:if="{{back}}"
+			 class="back"
+			 src="/assets/imgs/nav_back.png"
+			 bind:tap="back"
+			/>
+			<image
+			 wx:if="{{home}}"
+			 class="home"
+			 src="/assets/imgs/nav_home.png"
+			 bind:tap="home"
+			/>
+		</view>
+		<view class="title">{{title}}</view>
+	</view>
+</view>
+

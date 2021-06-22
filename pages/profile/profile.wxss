@@ -1,0 +1,196 @@
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topLogin{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 380rpx;
+}
+
+.bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  height: 100%;
+  width: 100%;
+}
+
+.login{
+  background-color: white;
+
+  height: 80rpx;
+  width: 41%;
+  border-radius: 40rpx;
+
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  font-weight: bolder;
+  color: #5D7F63;
+  box-shadow: 3rpx 3rpx 4rpx 0 rgba(0, 0, 0, .3);
+}
+
+.version{
+  margin: 30rpx 0;
+  text-align: center;
+  font-size: 22rpx;
+  color: #D2D2D2;
+}
+
+.infoWraper{
+}
+
+.infoNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 50rpx;
+  padding: 20rpx 40rpx 0 30rpx;
+
+  line-height: 50rpx;
+  font-weight: bold;
+}
+
+.infoTitle{
+  height: 100%;
+  font-size: 32rpx;
+}
+
+.infoLogin{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.tipLogin{
+  font-size: 27rpx;
+  color: #ACACAC;
+}
+
+.arrow{
+  width: 20rpx;
+  height: 20rpx;
+  border:1rpx solid #ACACAC;
+  border-left: none;
+  border-top: none;
+  margin-left: 10rpx;
+
+  transform: rotate(-45deg);
+}
+
+.info{
+  padding: 10rpx 20rpx;
+}
+
+.infoItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30rpx;
+  width: 100%;
+  height: 100rpx;
+  font-size: 25rpx;
+  color: #A7A7A7;
+}
+
+.left{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100rpx;
+  height: 100%;
+}
+
+.left .icon{
+  height: 30rpx;
+  width: 30rpx;
+  margin-top: 30rpx;
+}
+
+.right .analyse{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 200rpx;
+}
+
+.analyse .top{
+  margin-top: 10rpx;
+}
+
+.analyse .bottom{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.analyse .count{
+  font-size: 40rpx;
+}
+
+.analyse .looked{
+  position: relative;
+  bottom: 5rpx;
+
+  margin-left: 10rpx;
+}
+
+.infoItem .right{
+  position: relative;
+  flex-grow: 1;
+  display: flex;  
+
+  height: 100%;
+  font-weight: bold;
+}
+
+.openAnalyse{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 35rpx;
+
+  padding-right: 20rpx;
+  width: 100%;
+}
+
+.tipAnalyse{
+  margin-left: 75rpx;
+  font-size: 23rpx;
+  font-weight: normal;
+  opacity: .5;
+}
+
+.openWraper{
+  display: flex;
+  align-items: center;
+}
+
+.immediatelyOpen{
+  height: 45rpx;
+  width: 125rpx;  
+  background-color:#F5F5F5;
+
+  text-align: center;
+  line-height: 45rpx;
+  border-radius: 8rpx;
+}
+
+.splite{
+  position: absolute;
+  width: 100%;
+  height: 3rpx;
+  background-color:rgba(0, 0, 0, .05);
+  bottom: -20rpx;
+}

@@ -1,0 +1,8 @@
+<view class="container">
+  	<!-- 顶部导航栏 -->
+	<nav-bar
+	title="榜单"
+	 back="{{false}}"
+	 home="{{false}}"
+	/>
+</view>

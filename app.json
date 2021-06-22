@@ -1,14 +1,45 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/home/home",
+    "pages/rank/rank",
+    "pages/list/list",
+    "pages/profile/profile",
+    "pages/login/login",
+    "pages/agreement/agreement",
+    "pages/detail/detail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "tabBar": {
+    "color": "#AAAAAA",
+    "selectedColor": "#56B465",
+    "backgroundColor": "#fff",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/imgs/ic_tab_home_normal.png",
+        "selectedIconPath": "/assets/imgs/ic_tab_home_active.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "榜单",
+        "iconPath": "/assets/imgs/ic_tab_subject_normal.png",
+        "selectedIconPath": "/assets/imgs/ic_tab_subject_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/assets/imgs/ic_tab_profile_normal.png",
+        "selectedIconPath": "/assets/imgs/ic_tab_profile_active.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationStyle": "custom"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "豆瓣评分想要获取你的地理位置"
+    }
+  }
 }

@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+
+.item{
+  margin: 0rpx 15rpx;
+}
+
+.hide{
+  visibility: hidden;
+}

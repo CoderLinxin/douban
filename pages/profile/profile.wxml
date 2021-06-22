@@ -1,0 +1,68 @@
+<!-- 用户个人信息界面 -->
+
+<view class="containerWraper">
+	<!-- 顶部导航栏 -->
+	<nav-bar title="书影音档案" back="{{false}}" home="{{false}}" />
+
+	<view class="container">
+		<!-- 顶部导航栏 -->
+
+		<view>
+			<!-- 顶部登录界面 -->
+			<view class="topLogin">
+				<image class="bg" src="/assets/imgs/bg_mine_login.png" mode="aspectFill" />
+				<view class="login" bind:tap="login">登录</view>
+			</view>
+
+			<!-- 中部个人读书信息 -->
+			<view class="infoWraper">
+				<!-- 个人读书信息导航 -->
+				<view class="infoNav">
+					<view class="infoTitle">我的书影音</view>
+					<view class="infoLogin" bind:tap="login">
+						<view class="tipLogin">登录查看</view>
+						<view class="arrow" />
+					</view>
+				</view>
+				<!-- 读书信息 -->
+				<view class="info">
+					<!-- 读书信息条目 -->
+					<view class="infoItem" wx:for='{{items}}' wx:key="unique">
+						<view class="left">
+							<image class="icon" src="/assets/imgs/{{item.icon}}" />
+						</view>
+
+						<view class="right">
+							<view class="analyse">
+								<view class="top">{{item.title}}</view>
+								<view class="bottom">
+									<text class="count">{{item.count}}</text>
+									<text class="looked">{{item.has}}</text>
+								</view>
+							</view>
+
+							<view class="openAnalyse">
+								<text class="tipAnalyse">{{item.mark}}</text>
+								<view
+								 data-id="{{index}}"
+								 id="item-{{index}}"
+								 class="openWraper"
+								 bind:tap="openVip"
+								>
+									<view class="immediatelyOpen">立即开启</view>
+									<view class="arrow" />
+								</view>
+							</view>
+
+							<view class="splite" wx:if="{{index<items.length-1}}" />
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<!-- 版本号 -->
+		<view class="version">版本1.0.39</view>
+	</view>
+</view>
+
